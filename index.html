@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header__logo-box">
+                        <h2 class="header__logo">devFariz</h2>
+                    </div>
+                    <h1 class="title">
+                        Memory Game
+                    </h1>
+                    <button class="results__btn">
+                        Results
+                    </button>
+                </div>
+            </div>
+        </header>
+    
+        <main class="main">
+            <div class="container">
+                <div class="game-container">
+                    <div class="game-card" data-name="bmw">
+                        <img src="./img/bmw.jpg" alt="bmw" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="bmw">
+                        <img src="./img/bmw.jpg" alt="bmw" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="taxi">
+                        <img src="./img/taxi.png" alt="taxi" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="taxi">
+                        <img src="./img/taxi.png" alt="taxi" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="chicken">
+                        <img src="./img/chicken.jpg" alt="chicken" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="chicken">
+                        <img src="./img/chicken.jpg" alt="chicken" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="dog">
+                        <img src="./img/dog.jpg" alt="dog" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="dog">
+                        <img src="./img/dog.jpg" alt="dog" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="bird">
+                        <img src="./img/bird.jpg" alt="bird" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="bird">
+                        <img src="./img/bird.jpg" alt="bird" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="candle">
+                        <img src="./img/candle.jpg" alt="candle" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                    <div class="game-card" data-name="candle">
+                        <img src="./img/candle.jpg" alt="candle" class="front-face">
+                        <img src="./img/star.png" alt="star" class="back-face">
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer__left">
+                        <span>©</span>
+                        <span>2022</span>
+                        <a href="https://github.com/DevFariz" class="github__link footer__link">github</a>
+                    </div>
+                    <div class="footer__right">
+                        <a href="https://rs.school/js-stage0/" class="footer__right-link footer__link">Rolling Scopes School</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="popup-container">
+            <div class="popup-game__start">
+                <h3 class="popup__title">Enter your nickname:</h3>
+                <form class="form">
+                    <input class="input__field" autofocus type="text" placeholder="Type here...">
+                    <div class="form-btns">
+                        <div class="input__btn ok__btn">OK</div>
+                        <div class="input__btn cancel__btn">Cancel</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup-results">
+            <button class="close">X</button>
+            <div class="popup-results__container">
+                <h3 class="popup__title">
+                    Results Table: 
+                </h3>
+                <div class="results-container">
+                    <p id="no-result" class="result">No results yet</p>
+                </div>
+                <button class="new__player">New Player</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
